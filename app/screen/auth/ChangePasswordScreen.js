@@ -17,7 +17,7 @@ const ChangePasswordScreen = () => {
     if (password && password_confirmation) {
       if (password === password_confirmation) {
         console.log("Password Changed Successfully")
-        const formdata = { password }
+        const formdata = { password, password_confirmation }
         console.log(formdata)
         clearTextInput()
         Toast.show({
